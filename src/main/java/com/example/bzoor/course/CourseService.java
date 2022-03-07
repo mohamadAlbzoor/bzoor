@@ -26,4 +26,18 @@ public class CourseService {
         this.courseRepository.save(course);
     }
 
+    public void deleteCourse(String id){
+        this.courseRepository.deleteById(id);
+    }
+
+    public void put(Course course){
+        this.courseRepository.save(course);
+    }
+
+    public void patch(String courseId, String des){
+        Course course = this.courseRepository.findById(courseId).get();
+        course.setDescription(des);
+        this.courseRepository.save(course);
+    }
+
 }
