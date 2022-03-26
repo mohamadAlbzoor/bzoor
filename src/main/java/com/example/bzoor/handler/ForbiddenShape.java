@@ -10,7 +10,7 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 @Setter
 @Getter
-public class deleteExceptionShape {
+public class ForbiddenShape {
     private final String message;
     private final Throwable throwable;
     private final HttpStatus httpStatus;
